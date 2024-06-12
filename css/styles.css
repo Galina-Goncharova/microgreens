@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(50, 49, 49);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  font: 3em sans-serif;
+}
+.card {
+  background-color: rgb(132, 130, 130);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 12px;
+}
