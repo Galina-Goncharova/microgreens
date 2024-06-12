@@ -2,7 +2,7 @@ body {
   background-color: rgb(50, 49, 49);
   color: #ffffff;
   text-align: center;
-  padding: 20px;
+  padding: 12px;
 }
 
 ul {
@@ -17,4 +17,9 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 12px;
+}
+
+.name {
+  margin-top: 8px;
+  margin-bottom: 0;
 }
