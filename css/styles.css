@@ -2,7 +2,7 @@ body {
   background-color: rgb(50, 49, 49);
   color: #ffffff;
   text-align: center;
-  padding: 12px;
+  padding: 30px;
 }
 
 ul {
@@ -10,15 +10,12 @@ ul {
   padding: 0;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .title {
   font: 3em sans-serif;
-}
-.card {
-  background-color: rgb(132, 130, 130);
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  margin-bottom: 12px;
 }
 
 .name {
@@ -27,7 +24,18 @@ ul {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background-color: rgb(132, 130, 130);
+  padding: 20px;
+  flex-basis: calc((100% - 45px) / 4);
+}
+/* @media screen and (min-width: 768px) {
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -37,5 +45,49 @@ ul {
   .card {
     flex-basis: calc((100%-20px) / 2);
     max-width: 350px;
+  }
+} */
+
+@media screen and (max-width: 1665px) {
+  .card {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+
+@media screen and (max-width: 1265px) {
+  body {
+    padding: 8px;
+  }
+  .card {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    gap: 20px;
+  }
+  .card {
+    flex-basis: calc((100% - 20px) / 2);
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    padding: 20px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+
+  .dscr {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
