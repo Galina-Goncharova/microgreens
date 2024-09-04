@@ -94,11 +94,24 @@ p {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 680px) {
   body {
     padding: 8px;
   }
+
+  .container {
+    gap: 15px;
+  }
+
   .card {
+    flex-basis: calc((100% - 15px) / 2);
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .card {
+    flex-basis: 100%;
     padding: 8px;
   }
 }
